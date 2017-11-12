@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.alicee_pc.machine.MachineDisplay"
+    tools:showIn="@layout/app_bar_machine_display"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/mac_img"
+        android:src="@drawable/mm2"
+        android:backgroundTintMode="src_in"
+        android:backgroundTint="@color/maroon"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Machine Name"
+        android:textSize="25dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"/>
+    <TextView
+        android:id="@+id/mac_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:textStyle="italic"
+        android:textColor="@color/maroon"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Machine ID"
+        android:textSize="25dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"/>
+    <TextView
+        android:id="@+id/mac_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:textStyle="italic"
+        android:textColor="@color/maroon"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"/>
+
+<LinearLayout
+    android:layout_width="170dp"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginLeft="120dp"
+    android:layout_marginTop="30dp">
+    <ImageView
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:paddingLeft="30dp"
+        android:layout_marginBottom="15dp"
+        android:src="@drawable/pointing"/>
+
+</LinearLayout>
+
+
+</LinearLayout>

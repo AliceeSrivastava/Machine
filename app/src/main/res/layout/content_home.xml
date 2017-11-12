@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.alicee_pc.machine.Home"
+    tools:showIn="@layout/app_bar_home"
+    android:background="@drawable/background"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="280dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="200dp">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="VIEW MACHINE"
+            android:id="@+id/viewmac"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:background="@color/grey"
+            android:textSize="30dp"
+            android:onClick="view_mach"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="280dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="50dp">
+
+        <Button
+            android:id="@+id/addmac"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:onClick="addmac"
+            android:background="@color/grey"
+            android:text="ADD MACHINE"
+            android:textColor="@color/black"
+            android:textSize="30dp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

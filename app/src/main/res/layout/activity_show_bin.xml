@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.alicee_pc.machine.ShowBin"
+    android:orientation="vertical">
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+        android:background="@color/grey"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:id="@+id/machine_name"
+            android:layout_gravity="center"
+            android:textSize="40dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="Bin Information"
+            android:layout_gravity="center"
+            android:textColor="@color/maroon"
+            android:textStyle="italic"
+            android:textSize="25dp"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/blueGrey">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="Bin Name : "
+                android:textSize="25dp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:id="@+id/bin_name"
+                android:textSize="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/brown"
+                android:textStyle="italic"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="Bin Capacity : "
+                android:textSize="25dp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:id="@+id/bin_capacity"
+                android:textSize="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/brown"
+                android:textStyle="italic"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="Unit : "
+                android:textSize="25dp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:id="@+id/unit"
+                android:textSize="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/brown"
+                android:textStyle="italic"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="Alert : "
+                android:textSize="25dp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"/>
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:id="@+id/alert"
+                android:textSize="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/yellow"
+                android:textStyle="bold"/>
+            <ProgressBar
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:id="@+id/prg"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="Warning : "
+                android:textSize="25dp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"/>
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:id="@+id/warning"
+                android:textSize="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/orange"
+                android:textStyle="bold"/>
+            <ProgressBar
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:id="@+id/prg_war"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="Caution : "
+                android:textSize="25dp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"/>
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:id="@+id/caution"
+                android:textSize="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/red"
+                android:textStyle="bold"/>
+            <ProgressBar
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:id="@+id/prg_cau"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="60dp"
+                android:text="Home"
+                android:id="@+id/home"
+                android:textSize="20dp"
+                android:layout_marginLeft="10dp"
+                android:background="@color/grey" />
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="60dp"
+                android:text="View"
+                android:id="@+id/View"
+                android:textSize="20dp"
+                android:layout_marginLeft="20dp"
+                android:background="@color/grey" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

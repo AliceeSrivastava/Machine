@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.alicee_pc.machine.BinDetail"
+    tools:showIn="@layout/app_bar_bin_detail"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:src="@drawable/detail"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DETAILS"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Machine Name : "
+            android:textSize="25dp"
+            android:layout_marginTop="15dp"/>
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:id="@+id/tvname"
+           android:textColor="@color/pink"
+           android:textSize="25dp"
+           android:textStyle="italic"
+           android:layout_marginLeft="20dp"
+           android:layout_marginTop="15dp"/>
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Machine Id        : "
+                android:textColor="@color/black"
+                android:textSize="25dp" />
+
+            <TextView
+                android:id="@+id/tvid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/pink"
+                android:textSize="25dp"
+                android:textStyle="italic" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="70dp"
+                android:src="@drawable/imgbname"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bin Name"
+                android:textColor="@color/black"
+                android:textSize="25dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="70dp">
+
+            <EditText
+                android:id="@+id/bname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bin Capacity"
+                android:textColor="@color/black"
+                android:textSize="25dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="20dp"/>
+            <EditText
+                android:id="@+id/bcap"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Units"
+                android:textColor="@color/black"
+                android:textSize="25dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="20dp"/>
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/bunit">
+
+            </Spinner>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="THRESHOLD"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginLeft="20dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="40dp"
+                android:src="@drawable/alert"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Alert"
+                android:textColor="@color/black"
+                android:textSize="25dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/black"
+                android:textSize="25dp"
+                android:id="@+id/alert"
+                android:layout_marginLeft="20dp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Msg"
+                android:id="@+id/msg_alert"
+                android:textColor="@color/black"
+                android:textSize="25dp"
+                android:layout_marginLeft="60dp"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Mobile Number"
+                android:id="@+id/mobno_alert"
+                android:layout_marginLeft="60dp"
+                android:textColor="@color/black"
+                android:textSize="25dp"/>
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mail"
+                android:id="@+id/mail_alert"
+                android:textColor="@color/black"
+                android:textSize="25dp"
+                android:layout_marginLeft="60dp"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Mail Id"
+                android:id="@+id/mailid_alert"
+                android:layout_marginLeft="60dp"
+                android:textColor="@color/black"
+                android:textSize="25dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="40dp"
+                android:src="@drawable/warning"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Warning"
+                android:textColor="@color/black"
+                android:textSize="25dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/black"
+                android:textSize="25dp"
+                android:id="@+id/warning"
+                android:layout_marginLeft="20dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Msg"
+                android:textColor="@color/black"
+                android:textSize="25dp"
+                android:id="@+id/msg_war"
+                android:layout_marginLeft="60dp"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Mobile Number"
+                android:id="@+id/mobno_war"
+                android:layout_marginLeft="60dp"
+                android:textColor="@color/black"
+                android:textSize="25dp"/>
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mail"
+                android:id="@+id/mail_war"
+                android:textColor="@color/black"
+                android:textSize="25dp"
+                android:layout_marginLeft="60dp"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Mail Id"
+                android:id="@+id/mailid_war"
+                android:layout_marginLeft="60dp"
+                android:textColor="@color/black"
+                android:textSize="25dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="40dp"
+                android:src="@drawable/caution"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Caution"
+                android:textColor="@color/black"
+                android:textSize="25dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/black"
+                android:textSize="25dp"
+                android:id="@+id/caution"
+                android:layout_marginLeft="20dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Msg"
+                android:id="@+id/msg_cau"
+                android:textColor="@color/black"
+                android:textSize="25dp"
+                android:layout_marginLeft="60dp"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Mobile Number"
+                android:id="@+id/mobno_cau"
+                android:layout_marginLeft="60dp"
+                android:textColor="@color/black"
+                android:textSize="25dp"/>
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mail"
+                android:id="@+id/mail_cau"
+                android:textColor="@color/black"
+                android:textSize="25dp"
+                android:layout_marginLeft="60dp"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Mail Id"
+                android:id="@+id/mailid_cau"
+                android:layout_marginLeft="60dp"
+                android:textColor="@color/black"
+                android:textSize="25dp"/>
+        </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginLeft="50dp">
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="VIEW DETAILS"
+        android:id="@+id/view_details"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="20dp"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:id="@+id/submit"
+        android:textStyle="bold"
+        android:text="SUBMIT"/>
+</LinearLayout>
+
+
+    </LinearLayout>
+    </ScrollView>
